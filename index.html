@@ -5,28 +5,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>Document</title>
 </head>
 
 <body>
-    <div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
+    <div class="main">
+
+        <div class="inputs">
+            <input type="text" name="newSize" id="newSize" placeholder="Size of Canvas" value="16">
+            <button onclick="changeCanvas(newSize.value)">Set size</button>
+        </div>
+
+        <div canvas="canvas" id="canvas">
+        </div>
+
     </div>
+    <script src="main.js"></script>
 </body>
 
 </html>

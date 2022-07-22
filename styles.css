@@ -1,0 +1,16 @@
+.main {
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    grid-template-columns: 15% 85%;
+}
+
+#canvas {
+    border-color: red;
+    border-width: 2px;
+    border-style: solid;
+    display: grid;
+    width: 650px;
+    height: 650px;
+    grid-column: 2/3;
+}
