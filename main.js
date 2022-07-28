@@ -1,8 +1,13 @@
+let mouseDown = false;
+    document.body.onmousedown = () => (mouseDown = true);
+    document.body.onmouseup = () => (mouseDown = false);
+
 function createCanvas(size) {
     let canvas = document.getElementById('canvas');
     let cuadros = canvas.querySelectorAll('div')
     cuadros.forEach(div=> div.remove());
     let totalSquares = size * size;
+
 
     //set the width and height of the canvas according to the input
         canvas.style.gridTemplateColumns = `repeat(${size}, 1fr)`;

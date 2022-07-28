@@ -12,9 +12,14 @@
 <body>
     <div class="main">
 
+        <div class="title">
+            <p id="title">Etch-a-Sketch</p>
+        </div>
+
         <div class="inputs">
-            <input type="text" name="newSize" id="newSize" placeholder="Size of Canvas" value="16">
-            <button onclick="changeCanvas(newSize.value)">Set size</button>
+            <input type="text" name="newSize" id="newSize" placeholder="Size of Canvas" value="50" class="buttons">
+            <button id="sizeButton" onclick="changeCanvas(newSize.value)" class='buttons'>Set size</button>
+            <button id="resetButton" onclick="changeCanvas(newSize.value)" class="buttons">Reset</button>
         </div>
 
         <div canvas="canvas" id="canvas">

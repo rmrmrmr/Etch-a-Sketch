@@ -1,16 +1,56 @@
+body {
+    background-color: #558ED5;
+}
+
 .main {
     display: grid;
     width: 100vw;
     height: 100vh;
     grid-template-columns: 15% 85%;
+    grid-auto-rows: min-content;
+}
+
+.inputs {
+    display: grid;
+    justify-self: right;
+    align-self: center;
+    grid-row: 2/3;
 }
 
 #canvas {
-    border-color: red;
-    border-width: 2px;
+    border-color: #CB2027;
+    border-width: 50px;
     border-style: solid;
+    border-radius: 15px;
     display: grid;
-    width: 650px;
-    height: 650px;
+    width: 60vw;
+    height: 70vh;
     grid-column: 2/3;
+    grid-row: 2/3;
+    justify-self: center;
+    align-self: center;
+}
+
+.title {
+    grid-column: 2/3;
+    justify-self: center;
+    align-content: center;
+    color: #FFDE53;
+    font-size: xx-large;
+    font-weight: bold;
+    font-stretch: extra-condensed;
+}
+
+
+
+.buttons {
+    background-color: #202249;
+    color: whitesmoke;
+    text-align: center;
+    height: auto;
+    width: auto;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-width: 2px;
+
 }
